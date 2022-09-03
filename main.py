@@ -110,6 +110,13 @@ def service():
                 transaction = coinage(request)
                 if transaction != 0:
                     money += MENU[request]["cost"]
+                else:
+                    if "water" in MENU[request]["ingredients"]:
+                        water += MENU[request]["ingredients"]["water"]
+                    if "milk" in MENU[request]["ingredients"]:
+                        milk += MENU[request]["ingredients"]["milk"]
+                    if "coffee" in MENU[request]["ingredients"]:
+                        coffee += MENU[request]["ingredients"]["coffee"]
                 # print(f"Money: {money}")
         elif request == "report":
             generate_report(water, milk, coffee, money)
@@ -118,3 +125,4 @@ def service():
 
 
 service()
+
