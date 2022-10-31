@@ -1,9 +1,7 @@
-# Coffee-Machine
+# Project 15 for 100 Days of Code Using the PyCharm IDE
+- Coded a coffee machine using functional programming in python
 
-Project 15 using the PyCharm IDE
-
-
-Program Requirements:
+# Program Requirements:
 1. Prompt user by asking “ What would you like? (espresso/latte/cappuccino): ”
   a. Check the user’s input to decide what to do next.
   b. The prompt should show every time action has completed, e.g. once the drink is
